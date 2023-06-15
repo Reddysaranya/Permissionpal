@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="container" id="userDetailsContainer" style="display: none;">
+    <h2>Student Details</h2>
+    <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+    <p><strong>Batch: </strong><span id="displaybatch"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    <p><strong>Father name: </strong><span id="displayfname"></span></p>
+    <p><strong>Mother name: </strong><span id="displaymname"></span></p>
+    <p><strong>Address : </strong><span id="displayaddress"></span></p>
+    <p><strong>Click the Button <br></strong></p>
+    <button id="generalLeaveBtn">General Leave</button>
+    <br>
+    <button id="emergencyLeaveBtn">Emergency Leave<br></button>
+    <br>
+    <button id="logoutBtn">Logout</button>
+    <form id="leaveForm" style="display: none;">
+        <h3>Leave Application</h3>
+        <div>
+          <label for="document">Upload Document:</label>
+          <input type="file" id="document" name="document" accept=".pdf,.doc,.docx" required>
+        </div>
+        <div>
+          <label for="paragraph">Write a Paragraph:</label>
+          <textarea id="paragraph" name="paragraph" rows="6" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="myjs.js"></script>
+</body>
+</html>
