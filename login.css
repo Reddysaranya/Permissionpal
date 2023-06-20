@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
  
 * {
@@ -24,7 +24,7 @@ h1 {
 /* Styling the form container */
 .form_container {
  position: absolute;
- left: 28px;
+ left: 30px;
  top: 50px;
  margin: 20px;
  max-width: 300px;

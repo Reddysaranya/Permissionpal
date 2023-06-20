@@ -6,7 +6,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyAO8IHGhfvtkmfodYsT6zILg9iooG1iPNk",
   authDomain: "permissionpal-616d3.firebaseapp.com",
-  databaseURL: "https://permissionpal-616d3-default-rtdb.firebaseio.com",
+  databaseURL: "https://permissionpal-616d3-default-rtdb.firebaseio.com/",
   projectId: "permissionpal-616d3",
   storageBucket: "permissionpal-616d3.appspot.com",
   messagingSenderId: "76674454119",
