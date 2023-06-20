@@ -28,7 +28,7 @@
 
 input, textarea
 {
-    width: 80%;
+    width: 50%;
     margin : 11px auto;
     padding: 7px;
     font-size: 11px;
@@ -73,7 +73,7 @@ cursor: pointer;
 .inpd input{
   display: inline;
   width: 35%;
-  margin-left: 5px;
+  margin-left: 6px;
   margin-right: 5px;
   font-family: 'Roboto','sans-serif';
   font-size: 10px;

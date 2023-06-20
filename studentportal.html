@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Outpass portal kpriet</title>
+    <title>PermissionPal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +19,10 @@
     <!-- <script src="index.js"></script> -->
     <script src="index.js"></script>
   
-    <img class="bg" src="kpr_college_bg.jpg" alt="KPRIET" />
+    <img class="bg" src="gnitslogo.jpg" alt="GNITS" />
     <div class="container">
-      <h1>Welcome to KPRIET Outpass portal</h1>
+      <h1>Welcome to GNITS PermissionPal
+      </h1>
       <p>
         Submit this form after filling your details to apply for the outpass
       </p>
@@ -29,40 +30,54 @@
       <div class = "form_container">
         <p>Primary Details</p>
         <hr />
-        <input type="name" id="name" placeholder="Enter your name" />
-        <input type="text" id="rollno" placeholder="Enter your rollno" />
-        <input type="number" id="age" placeholder="Enter your age" />
-        <input type="email" id="email" placeholder="Enter your mail" />
         <div class="inpd">
-          <label for="dob">Enter your Date of Birth</label>
+        <b><label for="name">Enter your Name</label></b>  
+        <input type="name" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="inpd">
+          <b><label for="rollno">Enter your Roll no</label></b>
+        <input type="text" id="rollno" placeholder="Enter your rollno" />
+        </div>
+        <div class="inpd">
+          <b><label for="age">Enter your age</label></b>
+          <input type="number" id="age" placeholder="Enter your age" />
+        </div>
+        <div class="inpd">
+          <b><label for="email">Enter your mail</label></b>
+          <input type="email" id="email" placeholder="Enter your mail" />
+        </div>
+        <div class="inpd">
+          <b><label for="dob">Enter your Date of Birth</label></b>
           <input type="date" id="dob" placeholder="" />
         </div>
-        <input
-          type="text"
-          id="branch"
-          placeholder="Enter your Branch name eg. CSE"
-        />
-        <input type="number" id="year" placeholder="Enter your current year" />
+        <div class="inpd">
+          <b><label for="branch">Enter your Branch</label></b>
+          <input type="text"  id="branch"  placeholder="Enter your Branch name eg. CSE" />
+        </div>
+        <div class="inpd">
+          <b><label for="year">Enter your Year</label></b>
+          <input type="number" id="year" placeholder="Enter your current year" />
+        </div>
+        
 
         <p>Contact Details</p>
         <hr />
 
-        <input type="text" id="phoneno" placeholder="Enter your phone number" />
+        <div class="inpd">
+          <b><label for="phoneno">Enter your phoneno</label></b>
+          <input type="text" id="phoneno" placeholder="Enter your phone number" />
+        </div>
         
         <div class="inp">
-            <input
-            type="text"
-            id="parentphoneno"
-            placeholder="Enter your parent's/ Guardian's phone number"
-          />
-
+          <b><label for="parentphoneno">Enter your Parent phoneno</label></b>
+            <input  type="text" id="parentphoneno"  placeholder="Enter your parent's/ Guardian's phone number"/>
         </div>
-
 
         <p>Outpass Details</p>
         <hr />
 
         <div class="inp">
+          <b><label for="hostelname">Enter your Hostel Name</label></b>
             <input
           type="text"
           id="hostelname"
@@ -71,15 +86,25 @@
         </div>
         
         <div class="inpd">
-          <label for="fdate">From Date</label>
+          <b><label for="fdate">From Date</label></b>
           <input type="date" id="fdate" placeholder="Start date" />
         </div>
 
         <div class="inpd">
-          <label for="tdate">To Date</label>
+          <b><label for="tdate">To Date</label></b> 
           <input type="date" id="tdate" placeholder="Arrival date" />
         </div>
-        <input type="text" id="mode" placeholder="Mode of travel" />
+
+        
+        <div class="select">
+          <b><label for="mode">Mode of travel</label></b> 
+          <select name="mode" id="cars">
+            <option value="car">Car  </option>
+            <option value="bus">Bus</option>
+            <option value="train">Train</option>
+            <option value="flight">Flight</option>
+          </select>
+        </div>       
 
         <div class="inp boxform">
             <textarea
@@ -104,22 +129,15 @@
 
 
         <button class="btn" onclick = "save()">Submit</button>
+        <a href="index.html">
+          <button class="btn" >Back to login</button></a>
 
-        <a href="/login.html">
-          <button onclick = "stupage()"> 
-            Back to Student Login
-        </button>
-      </a>
-        <a href="/hodlogin.html"></a>
-        <button onclick = "hodpage()"> 
-            Back to Hod/Warden Login
-        </button>
-        </a>
+        
           
       </div>
     </div>
           <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
           <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-          <script src="main.js"></script>
+          
   </body>
 </html>
