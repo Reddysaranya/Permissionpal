@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Outpass portal kpriet</title>
+    <title>GNITS PermissionPal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,14 +28,16 @@
       <div class = "form_container">
         <p>Primary Details</p>
         <hr />
-
+      <b>  
+<p>
         <input type="text"  id="rollno" placeholder="Enter the student Roll no" />
 
         <div class="details">Student Name : <p id="name"></p></div>
         <div class="details">Roll No : <p id="rollno2"></p></div>
         <div class="details">Branch : <p id="branch"></p></div>
         <div class="details">Year : <p id="year"></p></div>
-        
+        <br>
+
         
         <p>Contact Details</p>
         <hr />
@@ -43,9 +45,7 @@
         <div class="details">Email : <p id="email"></p></div>
         <div class="details">Parent's Phone Number : <p id="parentphoneno"></p></div>
         
-        
-        
-        
+        <br>
         
         <p>Outpass Details</p>
         <hr />
@@ -56,7 +56,8 @@
         <div class="details">Mode : <p id="mode"></p></div>
         <div class="details">Reason : <p id="letter"></p></div>
         <div class="details">Queries : <p id="queries"></p></div>
-        
+        </b>
+</p>
         <div class="inp">
           <select name="status" id="status">
             <option value="none">select</option>
@@ -75,7 +76,9 @@
         
     <button onclick="sendEmail();">Send mail to student</button>
 
-        <a href="/hodlogin.html">
+
+    
+        <a href="index.html">
           <button class="btn" >Back to login</button></a>
         
       </div>
